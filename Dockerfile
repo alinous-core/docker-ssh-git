@@ -30,10 +30,6 @@ RUN mkdir /opt/repo.git && \
   git push origin master
 
 
-# Runtime script
-ADD script/run.sh /bin/run.sh
-RUN chmod +x /bin/run.sh
-
 RUN echo 'root:pass' | chpasswd
 
 EXPOSE 22
